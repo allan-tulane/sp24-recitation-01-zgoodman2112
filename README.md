@@ -82,10 +82,10 @@ Other than the first 2-3 cases for binary, yes, these theoretical running times 
 
 First we need to set up the equation and simplify by isolating k.
 
-n^2 + k*log_2(n) < kn =\n
-n^2 < kn - k*log_2(n) = \n
-n^2 < k(n - log_2(n)) = \n
-(n^2)/(n - log_2(n)) < k = \n
-k > (n^2)/(n - log_2(n))
++ n^2 + k*log_2(n) < kn =
++ n^2 < kn - k*log_2(n) =
++ n^2 < k(n - log_2(n)) =
++ (n^2)/(n - log_2(n)) < k =
++ k > (n^2)/(n - log_2(n))
 
 So when k is greater than (n^2)/(n - log_2(n)), it is more efficient to first sort and then use binary search rather than just using linear search without sorting. 
